@@ -1,0 +1,37 @@
+[package]
+name = "subscription-fee"
+version = "0.0.0"
+authors = [ "you",]
+edition = "2018"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.dharitri-sc]
+version = "=0.1.5"
+features = ["dct-token-payment-legacy-decode"]
+
+[dependencies.dharitri-sc-modules]
+version = "=0.1.5"
+
+[dependencies.auto-farm]
+git = "https://github.com/Battula-anil-app-could/dx-exchange-tools-sc"
+rev = "977c496"
+
+[dev-dependencies.pair]
+git = "https://github.com/Battula-anil-app-could/dx-exchange-sc"
+rev = "a516a9"
+
+[dev-dependencies.pausable]
+git = "https://github.com/Battula-anil-app-could/dx-exchange-sc"
+rev = "a516a9"
+
+[dev-dependencies.dharitri-sc-scenario]
+version = "=0.1.5"
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+num-traits = "0.2"
+hex = "0.4"
+hex-literal = "0.3.4"

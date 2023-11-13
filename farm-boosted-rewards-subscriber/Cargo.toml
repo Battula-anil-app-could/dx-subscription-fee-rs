@@ -1,0 +1,50 @@
+[package]
+name = "farm-boosted-rewards-subscriber"
+version = "0.0.0"
+authors = [ "you",]
+edition = "2018"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.dharitri-sc]
+version = "=0.1.5"
+
+[dependencies.dharitri-sc-modules]
+version = "=0.1.5"
+
+[dependencies.auto-farm]
+git = "https://github.com/Battula-anil-app-could/dx-exchange-tools-sc"
+rev = "977c496"
+
+[dependencies.subscription-fee]
+path = "../subscription-fee"
+
+[dependencies.subscriber]
+path = "../subscriber"
+
+[dependencies.energy-query]
+git = "https://github.com/Battula-anil-app-could/dx-exchange-sc"
+rev = "a516a9"
+
+[dependencies.energy-factory]
+git = "https://github.com/Battula-anil-app-could/dx-exchange-sc"
+rev = "a516a9"
+
+[dependencies.pair]
+git = "https://github.com/Battula-anil-app-could/dx-exchange-sc"
+rev = "a516a9"
+
+[dev-dependencies.pausable]
+git = "https://github.com/Battula-anil-app-could/dx-exchange-sc"
+rev = "a516a9"
+
+[dev-dependencies.dharitri-sc-scenario]
+version = "=0.1.5"
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+num-traits = "0.2"
+hex = "0.4"
+hex-literal = "0.3.4"
